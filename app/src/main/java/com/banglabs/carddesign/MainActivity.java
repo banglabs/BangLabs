@@ -2,6 +2,7 @@ package com.banglabs.carddesign;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -39,7 +40,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
 
 
+        if (view.getId() == R.id.create_card_btn_id) {
+            Intent intent = new Intent(getApplicationContext(), CreateCard.class);
+            startActivity(intent);
 
+        }
+        if (view.getId() == R.id.saved_card_btn_id){
+
+            Intent intent = new Intent(getApplicationContext(), Saved.class);
+            startActivity(intent);
+
+        }
+        if (view.getId() == R.id.edited_card_btn_id){
+
+            Intent intent = new Intent(getApplicationContext(), Edited.class);
+            startActivity(intent);
+
+        }
+        if (view.getId() == R.id.ready_made_btn_id){
+
+            Intent intent = new Intent(getApplicationContext(), ReadyMade.class);
+            startActivity(intent);
+
+        }
 
 
 

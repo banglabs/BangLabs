@@ -150,27 +150,30 @@
 
             </LinearLayout>
 
+
+            <TextView
+                android:id="@+id/powered_by_id"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/button_container_id"
+                android:gravity="center"
+                android:text="@string/PoweredByText" />
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/add_view_section_id"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/powered_by_id"
+                android:layout_margin="2dp"
+                android:background="#8FCCCBCB"
+                android:gravity="center"
+                android:text="Google ADD" />
+
         </RelativeLayout>
 
     </ScrollView>
 
-    <TextView
-        android:id="@+id/powered_by_id"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_below="@+id/home_page_id"
-        android:gravity="center"
-        android:text="@string/PoweredByText" />
-    <TextView
-        android:layout_marginTop="2dp"
-        android:id="@+id/add_view_section_id"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_below="@+id/powered_by_id"
-        android:layout_margin="2dp"
-        android:background="#8FCCCBCB"
-        android:gravity="center"
-        android:text="Google ADD" />
+
 
 
 </RelativeLayout>
